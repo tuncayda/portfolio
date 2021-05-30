@@ -1,0 +1,47 @@
+@import 'variables';
+
+.h1 {
+    font-size: $fs-xxl;
+    font-weight: $fw-black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: $color-primary;
+}
+
+.h2 {
+    font-size: $fs-large;
+    color: $color-primary;
+    font-weight: $fw-black;
+    text-decoration: none;
+}
+
+.main {
+    height: 100vh;
+    padding: $space-xxl $space-small 0 $space-small;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $space-small $space-small 0 $space-small;
+    
+    &__logo {
+        width: 6rem;
+    }
+}
+
+.project {
+}
+
+.footer {
+    padding: 0 $space-small;
+    background-color: $color-grey;
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        padding: $space-medium 0;
+        border-top: 1px solid $color-primary;
+    }
+}

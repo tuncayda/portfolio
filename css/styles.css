@@ -13,7 +13,11 @@ body {
   font-size: fs-base;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(205, 216, 220, 0.4), rgba(251, 177, 177, 0.3));
+}
+
+.bg {
+  background: linear-gradient(rgba(205, 216, 220, 0.4), rgba(251, 177, 177, 0.1), #EEEEEE);
+  background-repeat: no-repeat;
 }
 
 button {
@@ -23,12 +27,45 @@ button {
   color: inherit;
 }
 
-.project__header {
+.h1 {
   font-size: 5.4rem;
   font-weight: 900;
   -webkit-text-stroke-width: 1px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #0F24FA;
+}
+
+.h2 {
+  font-size: 2.4rem;
+  color: #0F24FA;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.main {
+  height: 100vh;
+  padding: 10rem 2rem 0 2rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+.navigation__logo {
+  width: 6rem;
+}
+
+.footer {
+  padding: 0 2rem;
+  background-color: #EEEEEE;
+}
+.footer__link {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2.8rem 0;
+  border-top: 1px solid #0F24FA;
 }
 
 /*# sourceMappingURL=styles.css.map */

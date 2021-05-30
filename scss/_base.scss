@@ -15,5 +15,16 @@ body {
   font-size: fs-base;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient($blue-light, $red-light);
+}
+
+.bg {
+  background: linear-gradient($blue-light, $red-light, $color-grey);
+  background-repeat: no-repeat;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  font-size: inherit;
+  color: inherit;
 }

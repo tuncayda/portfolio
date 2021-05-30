@@ -1,7 +1,7 @@
 // Color codes
 $blue: #0F24FA;
 $blue-light: rgba(205, 216, 220,.4);
-$red-light: rgba(251,177,177,.3);
+$red-light: rgba(251,177,177,.1);
 $grey: #EEEEEE;
 
 // Semantic variables
@@ -21,3 +21,10 @@ $fs-mini:   .7rem;
 // Font-weight
 $fw-black: 900;
 $fw-regular: 400;
+
+// Spacing
+$space-xxl: 10rem;
+$space-xl: 4.2rem;
+$space-large: 3.8rem;
+$space-medium: 2.8rem;
+$space-small: 2rem;
