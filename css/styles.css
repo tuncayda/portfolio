@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: "Libre Franklin", sans-serif;
-  font-size: fs-base;
+  font-size: 1.6rem;
+  color: #414CC2;
   width: 100vw;
   height: 100vh;
 }
@@ -42,9 +43,14 @@ button {
   text-decoration: none;
 }
 
-.main {
-  height: 100vh;
-  padding: 10rem 2rem 0 2rem;
+.h1.active {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: #0F24FA;
+  -webkit-text-stroke-color: #0F24FA;
+}
+
+.accordion:hover {
+  cursor: pointer;
 }
 
 .navigation {
@@ -55,6 +61,18 @@ button {
 }
 .navigation__logo {
   width: 6rem;
+}
+
+.main {
+  height: 100vh;
+  padding: 10rem 2rem 0 2rem;
+}
+
+.project__panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  line-height: 160%;
 }
 
 .footer {

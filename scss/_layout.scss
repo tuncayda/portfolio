@@ -15,9 +15,15 @@
     text-decoration: none;
 }
 
-.main {
-    height: 100vh;
-    padding: $space-xxl $space-small 0 $space-small;
+.h1.active {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: $color-primary;
+    -webkit-text-stroke-color: $color-primary;
+}
+
+.accordion:hover {
+    // background-color: $color-grey;
+    cursor: pointer;
 }
 
 .navigation {
@@ -31,7 +37,19 @@
     }
 }
 
+.main {
+    height: 100vh;
+    padding: $space-xxl $space-small 0 $space-small;
+}
+
 .project {
+
+    &__panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height $tr-regular;
+        line-height: 160%;
+    }
 }
 
 .footer {

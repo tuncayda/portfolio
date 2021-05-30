@@ -12,7 +12,8 @@ html {
 
 body {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: fs-base;
+  font-size: $fs-base;
+  color: $color-text;
   width: 100vw;
   height: 100vh;
 }
