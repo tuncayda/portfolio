@@ -1,0 +1,23 @@
+// Color codes
+$blue: #0F24FA;
+$blue-light: rgba(205, 216, 220,.4);
+$red-light: rgba(251,177,177,.3);
+$grey: #EEEEEE;
+
+// Semantic variables
+$color-primary:     $blue;
+$color-secondary:   $blue-light;
+$color-tertiary:    $red-light;
+$color-grey:        $grey;
+
+// Font-sizes scaled based on the "The Perfect Fifth"
+$fs-xxl:            5.4rem;
+$fs-extra-large:    3.6rem;
+$fs-large:          2.4rem;
+$fs-base:   1.6rem;
+$fs-small:  11rem;
+$fs-mini:   .7rem;
+
+// Font-weight
+$fw-black: 900;
+$fw-regular: 400;

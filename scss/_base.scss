@@ -1,0 +1,19 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 62.5% of 16px = 10px
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: fs-base;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient($blue-light, $red-light);
+}
