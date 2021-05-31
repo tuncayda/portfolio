@@ -11,11 +11,21 @@
     <title>Portfolio | Tuncay Dagdelen</title>
 </head>
 <body>
+    <div id="overlay" class="overlay">
+        <div class="overlay-close__container">
+            <img src="./close-btn.svg" alt="Close icon" id="close-button" class="close-button">
+        </div>
+        <div class="overlay__nav">
+            <div class="overlay__nav-link"><a href="#">WORK</a></div>
+            <div class="overlay__nav-link"><a href="#">ABOUT</a></div>
+            <div class="overlay__nav-link"><a href="#">PLAYGROUND</a></div>
+        </div>
+    </div>
     <div class="bg">
         <header class="header">
             <nav class="navigation">
                 <a href="#"><div class="navigation__logo"><img src="./logo.svg" alt="Logo"></div></a>
-                <div class="navigation__menu"><img src="./menu.svg" alt="Menu icon"></div>
+                <div class="navigation__menu"><img src="./menu.svg" id="menu-button" alt="Menu icon"></div>
             </nav>
         </header>
         <main class="main">
@@ -46,5 +56,6 @@
         </div>
     </footer>
     <script src="./scripts/project.js"></script>
+    <script src="./scripts/overlay.js"></script>
 </body>
 </html>

@@ -1,2 +1,2 @@
-# Compile and watch scss to css
-sass scss/main.scss css/styles.css --watch
+# Compile scss and run live-server
+sass --watch scss/main.scss css/styles.css & live-server

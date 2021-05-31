@@ -49,8 +49,43 @@ button {
   -webkit-text-stroke-color: #0F24FA;
 }
 
-.accordion:hover {
-  cursor: pointer;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #0F24FA;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.overlay__nav {
+  padding: 10rem 2rem 0 2rem;
+}
+.overlay__nav-link {
+  border-top: 1px solid #EEEEEE;
+  padding: 2.8rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.overlay__nav-link:last-child {
+  border-bottom: 1px solid #EEEEEE;
+}
+.overlay a {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 900;
+  font-size: 3.6rem;
+  text-decoration: none;
+  color: white;
+}
+.overlay-close__container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3.8rem 2rem;
+}
+
+.close-button {
+  width: 24px;
 }
 
 .navigation {

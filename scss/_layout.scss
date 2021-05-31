@@ -21,9 +21,56 @@
     -webkit-text-stroke-color: $color-primary;
 }
 
-.accordion:hover {
-    // background-color: $color-grey;
-    cursor: pointer;
+// ***************************************
+// USE THIS ON DESKTOP SIZE
+// .accordion:hover {
+    //     background-color: $color-grey;
+    //     cursor: pointer;
+    // }
+// ***************************************
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: $color-primary;
+    overflow-x: hidden;
+    z-index: 1;
+
+    &__nav {
+        padding: $space-xxl $space-small 0 $space-small;
+
+        &-link {
+            border-top: 1px solid $color-grey;
+            padding: $space-medium 0;
+            display: flex;
+            justify-content: flex-end;
+
+            &:last-child {
+                border-bottom: 1px solid $color-grey;
+            }
+        }
+    }
+
+    & a {
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: $fw-black;
+        font-size: $fs-extra-large;
+        text-decoration: none;
+        color: white;
+    }
+
+    &-close__container {
+        display: flex;
+        justify-content: flex-end;
+        padding: $space-large $space-small;
+    }
+}
+
+.close-button {
+    width: 24px;
 }
 
 .navigation {
