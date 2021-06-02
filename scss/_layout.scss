@@ -29,6 +29,11 @@
     // }
 // ***************************************
 
+.center {
+    padding-left: $space-small;
+    padding-right: $space-small;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -40,7 +45,7 @@
     z-index: 1;
 
     &__nav {
-        padding: $space-xxl $space-small 0 $space-small;
+        padding: $space-xl $space-small 0 $space-small;
 
         &-link {
             border-top: 1px solid $color-grey;
@@ -67,6 +72,29 @@
         justify-content: flex-end;
         padding: $space-large $space-small;
     }
+
+    // &__social {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     padding-top: $space-xxl;
+
+    //     &-text {
+    //         color: $color-grey;
+    //         font-size: $fs-base;
+    //         font-weight: 900;
+    //         margin-left: $space-mini;
+    //     }
+
+    //     &-text span:first-child {
+    //         color: #8690F8;
+    //         font-size: 12px;
+    //         font-weight: 300;
+    //     }
+
+    //     & img {
+    //         width: 32px;
+    //     }
+    // }
 }
 
 .close-button {
@@ -77,7 +105,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $space-small $space-small 0 $space-small;
+    padding-top: $space-small;
     
     &__logo {
         width: 6rem;
@@ -86,7 +114,7 @@
 
 .main {
     height: 100vh;
-    padding: $space-xxl $space-small 0 $space-small;
+    padding-top: $space-xxl;
 }
 
 .project {
@@ -100,7 +128,6 @@
 }
 
 .footer {
-    padding: 0 $space-small;
     background-color: $color-grey;
 
     &__link {
@@ -108,5 +135,66 @@
         justify-content: flex-end;
         padding: $space-medium 0;
         border-top: 1px solid $color-primary;
+    }
+}
+
+.about {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+    
+
+    &__description {
+
+        & .h2 {
+            width: 60%;
+            margin-top: $space-xl;
+            margin-bottom: $space-mini;
+        }
+
+        &  span {
+            display: inline-block;
+            width: 80%;
+            // margin: $space-small 0;
+            line-height: 160%;
+        }
+    }
+}
+
+.contact {
+    width: 100vw;
+    background-color: $color-primary;
+    color: $color-grey;
+
+    &__heading {
+        display: flex;
+        justify-content: center;
+        padding-top: $space-large;
+    }
+
+    & .h2 {
+        color: $color-grey;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: inherit;
+
+        padding: $space-large 0 $space-xxl 0;
+    }
+
+    &__social {
+        display: block;
+        color: inherit;
+
+
+        width: 15rem;
+        height: 7rem;
+        border: 1px solid $color-grey;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }
