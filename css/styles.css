@@ -162,7 +162,7 @@ a:active {
 }
 .contact__socials {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-family: inherit;
   padding: 3.8rem 0 10rem 0;
@@ -176,6 +176,9 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.contact__social:first-child {
+  margin-right: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

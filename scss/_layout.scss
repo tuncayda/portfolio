@@ -177,7 +177,7 @@
 
     &__socials {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         font-family: inherit;
 
@@ -185,10 +185,13 @@
     }
 
     &__social {
+
+        &:first-child {
+            margin-right: $space-mini;
+        }
+
         display: block;
         color: inherit;
-
-
         width: 15rem;
         height: 7rem;
         border: 1px solid $color-grey;
