@@ -21,14 +21,6 @@
     -webkit-text-stroke-color: $color-primary;
 }
 
-// ***************************************
-// USE THIS ON DESKTOP SIZE
-// .accordion:hover {
-    //     background-color: $color-grey;
-    //     cursor: pointer;
-    // }
-// ***************************************
-
 .center {
     padding-left: $space-small;
     padding-right: $space-small;
@@ -113,7 +105,7 @@
 }
 
 .main {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: $space-xxl;
 }
 
@@ -125,9 +117,19 @@
         transition: max-height $tr-regular;
         line-height: 160%;
     }
+
+    & img {
+        width: 60%;
+    }
+
+    & span {
+        display: inline-block;
+        clear: both;
+    }
 }
 
 .footer {
+    // margin-top: $space-small;
     background-color: $color-grey;
 
     &__link {
@@ -141,7 +143,6 @@
 .about {
     padding-top: $space-xxl;
     padding-bottom: $space-xxl;
-    
 
     &__description {
 

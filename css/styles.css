@@ -111,7 +111,7 @@ a:active {
 }
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 10rem;
 }
 
@@ -120,6 +120,13 @@ a:active {
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   line-height: 160%;
+}
+.project img {
+  width: 60%;
+}
+.project span {
+  display: inline-block;
+  clear: both;
 }
 
 .footer {
