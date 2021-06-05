@@ -57,8 +57,8 @@ a:active {
 }
 
 .center {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .overlay {
@@ -118,19 +118,25 @@ a:active {
 .project__panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-in;
   line-height: 160%;
 }
 .project img {
-  width: 60%;
+  width: 80%;
+}
+.project img:first-child {
+  margin-top: 2rem;
 }
 .project span {
   display: inline-block;
   clear: both;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
   background-color: #EEEEEE;
+  padding: 0 2rem;
 }
 .footer__link {
   display: flex;
@@ -186,6 +192,13 @@ a:active {
 }
 .contact__social:first-child {
   margin-right: 1.2rem;
+}
+
+.playground__sketch {
+  margin-top: 4.2rem;
+}
+.playground img {
+  width: 70%;
 }
 
 /*# sourceMappingURL=styles.css.map */
