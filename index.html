@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Portfolio | Tuncay Dagdelen</title>
 </head>
@@ -36,8 +37,8 @@
             </nav>
         </header>
         <main class="main center">
-            <h2 class="h2">WORK</h2>
-            <section class="project">
+            <h2 class="h2" data-aos="fade-up" data-aos-duration="500">WORK</h2>
+            <section class="project" data-aos="fade-up" data-aos-duration="1200">
                 <h1 class="h1 accordion">HAPTICS</h1>
                 <div class="project__panel">
                     <img src="./img/haptics-1.png" alt="The Falcon device and a monitor next to it">
@@ -61,7 +62,7 @@ My main role was to design and program the game.
                     </span>
                 </div>
             </section>
-            <section class="project">
+            <section class="project" data-aos="fade-up" data-aos-duration="1200">
                 <h1 class="h1 accordion">MUSIC</h1>
                 <div class="project__panel">
                     <img src="./img/music-3.png" alt="Photo taken of double diamond sketch">
@@ -108,6 +109,10 @@ Spotify can recommend new artists and songs, but they are based on what you alre
             <a href="playground.html" class="h2">PLAYGROUND</a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="./scripts/project.js"></script>
     <script src="./scripts/overlay.js"></script>
 </body>
